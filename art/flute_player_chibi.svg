@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 820" width="600" height="820">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDEBF2"/>
+      <stop offset="1" stop-color="#E6ECFF"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A58A6"/>
+      <stop offset="1" stop-color="#2B3374"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A3B63"/>
+      <stop offset="1" stop-color="#2E2440"/>
+    </linearGradient>
+    <linearGradient id="flute" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2C77E"/>
+      <stop offset="1" stop-color="#C98F45"/>
+    </linearGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFBF6"/>
+      <stop offset="1" stop-color="#F6E9F0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background: notebook-paper nod -->
+  <rect width="600" height="820" rx="36" fill="url(#bg)"/>
+  <g stroke="#B9CBE8" stroke-width="2" opacity="0.45">
+    <line x1="0" y1="90" x2="600" y2="90"/><line x1="0" y1="170" x2="600" y2="170"/>
+    <line x1="0" y1="250" x2="600" y2="250"/><line x1="0" y1="330" x2="600" y2="330"/>
+    <line x1="0" y1="410" x2="600" y2="410"/><line x1="0" y1="490" x2="600" y2="490"/>
+    <line x1="0" y1="570" x2="600" y2="570"/><line x1="0" y1="650" x2="600" y2="650"/>
+    <line x1="0" y1="730" x2="600" y2="730"/>
+  </g>
+  <circle cx="310" cy="330" r="270" fill="url(#halo)"/>
+
+  <g stroke="#4B2E45" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- back hair -->
+    <path d="M182,240 C165,330 170,420 196,478 C230,470 390,470 424,478 C450,420 455,330 438,240 Z" fill="url(#hair)"/>
+
+    <!-- bun + hairpin -->
+    <line x1="238" y1="72" x2="382" y2="128" stroke="#8A5A2B" stroke-width="7"/>
+    <circle cx="310" cy="108" r="46" fill="url(#hair)"/>
+    <path d="M280,95 C295,78 325,78 340,95" fill="none" stroke="#7A6A98" stroke-width="3"/>
+    <path d="M272,115 C290,100 330,100 348,115" fill="none" stroke="#7A6A98" stroke-width="3"/>
+    <line x1="352" y1="112" x2="382" y2="128" stroke="#8A5A2B" stroke-width="7"/>
+    <g transform="translate(382,128)">
+      <circle r="11" fill="#F7A9BF"/>
+      <circle cx="0" cy="-12" r="8" fill="#FBC6D4"/><circle cx="11" cy="-4" r="8" fill="#FBC6D4"/>
+      <circle cx="7" cy="10" r="8" fill="#FBC6D4"/><circle cx="-7" cy="10" r="8" fill="#FBC6D4"/>
+      <circle cx="-11" cy="-4" r="8" fill="#FBC6D4"/>
+      <circle r="5" fill="#FFE08A" stroke-width="2.5"/>
+      <path d="M4,14 C8,35 4,50 10,62" fill="none" stroke="#E07A98" stroke-width="3"/>
+      <circle cx="10" cy="66" r="5" fill="#E07A98" stroke-width="2.5"/>
+    </g>
+
+    <!-- skirt -->
+    <path d="M246,478 L374,478 C398,580 418,680 442,760 Q310,784 178,760 C202,680 222,580 246,478 Z" fill="url(#skirt)"/>
+    <g fill="none" stroke="#6D7BC8" stroke-width="3" opacity="0.8">
+      <path d="M270,500 C262,590 250,680 236,770"/>
+      <path d="M310,500 L310,776"/>
+      <path d="M350,500 C358,590 370,680 384,770"/>
+    </g>
+    <!-- shoes -->
+    <ellipse cx="280" cy="778" rx="22" ry="11" fill="#F7A9BF"/>
+    <ellipse cx="342" cy="778" rx="22" ry="11" fill="#F7A9BF"/>
+
+    <!-- torso -->
+    <path d="M250,378 Q310,366 370,378 L380,488 L240,488 Z" fill="url(#robe)"/>
+    <!-- crossed collar -->
+    <path d="M288,372 L336,450" fill="none" stroke="#F3A6B8" stroke-width="9"/>
+    <path d="M332,372 L308,410" fill="none" stroke="#F3A6B8" stroke-width="9"/>
+    <path d="M288,372 L336,450 M332,372 L308,410" fill="none" stroke-width="2.5"/>
+    <!-- sash + bow -->
+    <rect x="240" y="456" width="140" height="30" rx="8" fill="#F3A6B8"/>
+    <path d="M310,471 C290,450 272,458 276,472 C272,486 290,492 310,471 Z" fill="#F7BFCD"/>
+    <path d="M310,471 C330,450 348,458 344,472 C348,486 330,492 310,471 Z" fill="#F7BFCD"/>
+    <path d="M304,476 C298,510 292,530 286,556 M316,476 C322,510 328,530 336,556" fill="none" stroke="#F3A6B8" stroke-width="7"/>
+    <circle cx="310" cy="471" r="8" fill="#E07A98"/>
+
+    <!-- neck -->
+    <rect x="296" y="350" width="28" height="30" fill="#FFE2D0"/>
+
+    <!-- face -->
+    <ellipse cx="310" cy="262" rx="120" ry="108" fill="#FFE8D8"/>
+
+    <!-- bangs -->
+    <path d="M186,258 C176,160 238,118 310,118 C382,118 444,160 434,258
+             C424,226 410,214 398,238 C390,204 362,192 348,228
+             C338,196 300,190 290,230 C276,200 246,204 240,242
+             C226,220 200,226 186,258 Z" fill="url(#hair)"/>
+    <path d="M250,150 C270,138 290,134 310,134" fill="none" stroke="#8C7BB0" stroke-width="5" opacity="0.8"/>
+    <!-- side locks -->
+    <path d="M192,236 C180,290 184,342 204,380 C214,346 218,300 214,252 Z" fill="url(#hair)"/>
+    <path d="M428,236 C440,290 436,342 416,380 C406,346 402,300 406,252 Z" fill="url(#hair)"/>
+
+    <!-- blush -->
+    <ellipse cx="238" cy="302" rx="22" ry="12" fill="#FFB3C4" stroke="none" opacity="0.75"/>
+    <ellipse cx="384" cy="302" rx="22" ry="12" fill="#FFB3C4" stroke="none" opacity="0.75"/>
+
+    <!-- peaceful closed eyes -->
+    <path d="M240,278 Q262,296 286,278" fill="none" stroke-width="5"/>
+    <path d="M334,278 Q358,296 380,278" fill="none" stroke-width="5"/>
+    <path d="M240,278 L232,272 M244,284 L236,282" fill="none" stroke-width="3"/>
+    <path d="M380,278 L388,272 M376,284 L384,282" fill="none" stroke-width="3"/>
+    <!-- brows -->
+    <path d="M246,252 Q260,246 276,250" fill="none" stroke-width="3"/>
+    <path d="M344,250 Q360,246 374,252" fill="none" stroke-width="3"/>
+
+    <!-- pursed lips -->
+    <ellipse cx="312" cy="302" rx="6" ry="5" fill="#E86D8A" stroke-width="2.5"/>
+
+    <!-- left sleeve (raised) -->
+    <path d="M252,392 C228,362 196,334 176,312 L140,322 C110,362 100,432 120,482 C152,504 204,498 234,472 C248,450 256,420 252,392 Z" fill="url(#robe)"/>
+    <path d="M140,322 L176,312" fill="none" stroke="#F3A6B8" stroke-width="8"/>
+    <path d="M150,380 C160,420 180,450 200,470" fill="none" stroke="#E7D3DE" stroke-width="3"/>
+
+    <!-- right sleeve (raised) -->
+    <path d="M366,392 C380,374 386,362 386,346 L424,346 C462,380 492,440 472,486 C442,508 390,498 368,472 C358,448 358,418 366,392 Z" fill="url(#robe)"/>
+    <path d="M386,346 L424,346" fill="none" stroke="#F3A6B8" stroke-width="8"/>
+    <path d="M440,400 C450,430 452,455 444,478" fill="none" stroke="#E7D3DE" stroke-width="3"/>
+
+    <!-- flute (dizi) -->
+    <g transform="rotate(10.6 245 307)">
+      <rect x="85" y="299" width="320" height="16" rx="8" fill="url(#flute)"/>
+      <g stroke="#8A5A2B" stroke-width="3">
+        <line x1="100" y1="300" x2="100" y2="314"/>
+        <line x1="112" y1="300" x2="112" y2="314"/>
+        <line x1="390" y1="300" x2="390" y2="314"/>
+      </g>
+      <g fill="#6B4020" stroke="none">
+        <circle cx="332" cy="307" r="3.2"/>
+        <circle cx="200" cy="307" r="3"/><circle cx="218" cy="307" r="3"/>
+        <circle cx="236" cy="307" r="3"/><circle cx="254" cy="307" r="3"/>
+      </g>
+      <!-- tassel -->
+      <path d="M96,315 C92,340 98,352 92,372" fill="none" stroke="#E07A98" stroke-width="3"/>
+      <path d="M92,372 L84,398 L100,398 Z" fill="#E07A98" stroke-width="2.5"/>
+    </g>
+
+    <!-- hands -->
+    <path d="M140,300 C138,282 170,276 180,286 C188,294 186,308 176,312 C164,318 142,316 140,300 Z" fill="#FFE8D8"/>
+    <path d="M152,284 L150,292 M162,280 L161,290 M172,281 L171,291" fill="none" stroke-width="2.5"/>
+    <path d="M382,330 C382,314 414,312 422,324 C428,334 424,348 412,350 C398,352 382,344 382,330 Z" fill="#FFE8D8"/>
+    <path d="M394,318 L393,327 M405,316 L404,326 M415,319 L413,328" fill="none" stroke-width="2.5"/>
+  </g>
+
+  <!-- music notes -->
+  <g fill="#E07A98" stroke="#4B2E45" stroke-width="2.5">
+    <g transform="translate(58,196) rotate(-12)">
+      <ellipse cx="0" cy="30" rx="11" ry="8"/>
+      <path d="M10,30 L10,-6 Q22,2 26,12" fill="none" stroke-width="4" stroke="#4B2E45"/>
+    </g>
+  </g>
+  <g fill="#7D8CE0" stroke="#4B2E45" stroke-width="2.5">
+    <g transform="translate(96,124) rotate(8)">
+      <ellipse cx="0" cy="34" rx="10" ry="7"/>
+      <ellipse cx="30" cy="28" rx="10" ry="7"/>
+      <path d="M9,34 L9,0 L39,-6 L39,28" fill="none" stroke-width="4"/>
+    </g>
+  </g>
+  <g fill="#F2B56B" stroke="#4B2E45" stroke-width="2.5">
+    <g transform="translate(34,120) rotate(-6) scale(0.8)">
+      <ellipse cx="0" cy="30" rx="11" ry="8"/>
+      <path d="M10,30 L10,-6 Q22,2 26,12" fill="none" stroke-width="4" stroke="#4B2E45"/>
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#F3A6B8" stroke-width="2">
+    <path d="M500,150 L506,166 L522,172 L506,178 L500,194 L494,178 L478,172 L494,166 Z"/>
+    <path d="M520,560 L524,570 L534,574 L524,578 L520,588 L516,578 L506,574 L516,570 Z"/>
+    <path d="M86,600 L90,610 L100,614 L90,618 L86,628 L82,618 L72,614 L82,610 Z"/>
+    <path d="M190,70 L193,78 L201,81 L193,84 L190,92 L187,84 L179,81 L187,78 Z"/>
+  </g>
+</svg>
